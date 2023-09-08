@@ -30,7 +30,6 @@ function! DealiiprmIndent()
 
   " Add a 'shiftwidth' after lines starting a block:
   let openCol = prevl=~# '\v^\s*%(subsection)>'
-  echom prevlnum openCol
   if openCol
     let ind = ind + shiftwidth()
   endif
@@ -43,5 +42,9 @@ function! DealiiprmIndent()
   return ind
 endfunction
 
+
 setlocal indentexpr=DealiiprmIndent()
+setlocal foldlevel=2
+setlocal foldmethod=indent
+setlocal foldexpr=DealiiprmFoldExpr()
 setlocal autoindent

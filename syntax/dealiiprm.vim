@@ -33,7 +33,7 @@ syn match dealiiprmLineContinuation  "\.\{3}\s*[#]"me=e-1
 syn match dealiiprmLineContinuation  "\\\s*[#]"me=e-1
 
 " Highlight Data types
-syn keyword dealiiprmBool  true false
+syn keyword dealiiprmBool  true false True False
 syn match dealiiprmBool  "\<\d\+\%([edED][-+]\?\d\+\)\?[ijIJ]\?\>"
 syn match dealiiprmInt  "\<\d\+\%([edED][-+]\?\d\+\)\?[ijIJ]\?\>"
 syn match dealiiprmInt  "\<\d\+\%([edED][-+]\?\d\+\)\?[ijIJ]\?\>" "Integer numbers
